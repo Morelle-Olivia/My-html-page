@@ -8,3 +8,6 @@ https://twitter.com/njiowouo/status/1164971530385862656?s=20
 
 My Lucid post
 https://lucid.blog/hotoumorelle/posts
+
+Lucid post
+https://lucid.blog/hotoumorelle/post/an-html-page-of-my-cv-styled-with-css-271
