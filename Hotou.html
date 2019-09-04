@@ -1,29 +1,80 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My CV</title>
+
+    <style>
+    
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      }
+
+    th, td {
+        padding: 8px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+            text-shadow: 3px 2px hsl(0, 100%, 100%);
+        }
+
+    tr:hover {background-color: rgb(64, 62, 179);}
+
+    </style>
+
+<script type="text/javascript">
+    
+      function validateName()  {
+        x = document.myForm 
+        input = x.myInput.value
+        msgInput = x.input.value
+        eInput = x.email.value
+        if (input.length < 4) {
+          alert ("The fields cannot contain less than 4 characters!")
+          return false
+        }
+        else if (msgInput.length < 20) {
+          alert("The fields cannot contain less than 20 characters!")
+          return false
+        }  
+        else {
+          return true
+        }
+        
+      }
+    </script>
+    
 </head>
 <body>
-    <!DOCTYPE html>
-<html>
-<body>
-
+<p>
 <h2>Hotou CV</h2>
 
 <br>
-<a href="https://res.cloudinary.com/scattering/image/upload/v1566629469/1563798800711_tkazn9.jpg">Cloudinary Photo</a><br/>
-</brx>
+  <a href="https://res.cloudinary.com/scattering/image/upload/v1566629469/1563798800711_tkazn9.jpg">Cloudinary Photo</a><br/>
+</br>
+</p>
 
+<form name="myForm" onsubmit="return validateName()">
 
-<table style="width:100%">
-    <table border="2">
-  <tr bgcolor="grey">
-    <th colspan="2">Hotou Njiowouo Morelle Olivia</th>
-    <th colspan="3"></th>
-    <th colspan="2">molyko <br/> Buea, Cameroon <br/> (+237)682096246 <br/> hotoumorelle@gmail.com</th> 
-  </tr>
+  <fieldset>
+    <legend> Contact Form </legend>
+    Name: <input type="text" name="myInput" size="20"><br/>
+    Email: <input type="email" name="email"><br/><br/>
+    Title: <input type="text" name="title" value="title" style="width: 400px"><br/><br/>
+    Message: <input name="input" style="width: 400px; height:200px" min="20"><br/><br/>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<table div id="overflow" style="width:100%">
+    <table border="3">
+      <tr bgcolor="grey">
+      <th colspan="2">Hotou Njiowouo Morelle Olivia</th>
+      <th colspan="3"></th>
+      <th colspan="2">molyko <br/> Buea, Cameroon <br/> (+237)682096246 <br/> hotoumorelle@gmail.com</th> 
+      </tr>
   <!--colspan collapses the nupmber of rows you want-->
   <tr>
     <td><h4>Date</h4></td>
@@ -105,5 +156,8 @@
     <td></td>
     <td></td>
 </table>
+<br/><br/>
+
+
 </body>
 </html>
